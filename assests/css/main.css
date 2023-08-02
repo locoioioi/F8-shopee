@@ -180,6 +180,92 @@
 .notification__checkAll span {
     color: var(--black-color);
     font-weight: 600;
-    
 }
 
+/* auth form css*/
+
+.auth-form__header {
+    margin: 10px 9px;
+    padding: 10px 20px 0 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.auth-form__header .auth-form__heading {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+.auth-form__header .auth-form__switch-btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.form {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding: 20px 20px 10px 20px;
+}
+.form__group + .form__group {
+    padding-top: 10px;
+}
+.form__input {
+    padding: 10px;
+    width: 100%;
+    border:1px solid;
+    border-color: rgba(0, 0, 0,0.2);
+    font-size: 1.2rem;
+}
+.auth-form__policy {
+    padding: 0px 15px 0 15px;
+    width: 100%;
+    text-align: center;
+
+    
+}
+.auth-form__policy-text
+,.auth-form__policy-link {
+    font-size: 1.2rem;
+}
+.auth-form__policy-link {
+    color: var(--primary-color);
+}
+
+.auth-form__control {
+    margin-top: 80px;
+    padding-right: 20px;
+    justify-content: flex-end;
+    display: flex;
+}
+.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.auth-form__social {
+    margin-top: 10px;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #b9b7b7;
+
+}
+.btn--with-icon {
+    display: flex;
+    align-items: center;
+    min-width: 48%;
+    height: 34px;
+    font-size: 12px;
+    color: var(--black-color);
+}
+.btn--with-icon span {
+    flex-grow: 1;
+}
+.btn--with-icon i {
+    font-size: 1.8rem;
+}
+.btn--facebook {
+    background-color: #3A5A98;
+    color: var(--white-color);
+}

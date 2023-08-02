@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee</title>
-    <link rel="stylesheet" href="./assests/css/main.css">
     <link rel="stylesheet" href="./assests/css/base.css">
+    <link rel="stylesheet" href="./assests/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,7 +88,7 @@
                             <i class="nav__icon fa-regular fa-circle-question"></i>
                             <a href="" class="nav__link td-none">Trợ giúp</a>
                         </li>
-                        <li class="nav__item nav__item--bold nav__item--seperate">Đăng ký</li>
+                        <li class="nav__item nav__item--bold nav__item--seperate nav__register">Đăng ký</li>
                         <span class="nav_seperate"></span>
                         <li class="nav__item nav__item--bold">Đăng nhập</li>
                     </ul>
@@ -103,6 +103,61 @@
         <footer class="footer">
 
         </footer>
+
+        <div class="modal modal__register-display">
+            <div class="modal__overlay modal__register-remove">    
+
+            </div>
+            <div class="modal__body">   
+                <!-- authen form -->
+                <div class="auth-form"> 
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <form action="" class="form">
+                        <div class="form__group">
+                            <input type="email" class="form__input" name="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form__group">
+                            <input type="password" class="form__input" name="password" placeholder="Enter your password">
+                        </div>
+                        <div class="form__group">
+                            <input type="password" class="form__input" placeholder="Enter your password again">
+                        </div>
+                    </form>
+
+                    <div class="auth-form__policy">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Bảo Lộc về
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ </a> &
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật </a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__control">
+                        <div class="btn btn--normal">TRỞ LẠI</div>
+                        <div class="btn btn--primary">ĐĂNG KÝ</div>
+                    </div>
+
+                    <div class="auth-form__social">
+                        <a href="" class="btn btn--with-icon btn--facebook td-none ">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <span>
+                                kết nối với facebook
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--with-icon btn--google td-none">
+                            <i class="fa-brands fa-google"></i>
+                            <span>
+                                kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="./assests/js/script.js"></script>
 </body>
 </html>
