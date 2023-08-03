@@ -269,3 +269,28 @@
     background-color: #3A5A98;
     color: var(--white-color);
 }
+
+/* login */
+.auth-form__help {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: flex-end;
+}
+
+.auth-form__help-item {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: #9d9b9b;
+}
+.auth-form__seperated {
+    border-right: 1px solid #9d9b9b;
+}
+.auth-form__help-item--primary {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.auth-form__register,.auth-form__login {
+    display: none;
+}

@@ -90,7 +90,7 @@
                         </li>
                         <li class="nav__item nav__item--bold nav__item--seperate nav__register">Đăng ký</li>
                         <span class="nav_seperate"></span>
-                        <li class="nav__item nav__item--bold">Đăng nhập</li>
+                        <li class="nav__item nav__item--bold nav__login">Đăng nhập</li>
                     </ul>
                 </nav>
             </div>
@@ -104,13 +104,13 @@
 
         </footer>
 
-        <div class="modal modal__register-display">
-            <div class="modal__overlay modal__register-remove">    
+        <div class="modal modal__display">
+            <div class="modal__overlay modal__remove">    
 
             </div>
             <div class="modal__body">   
-                <!-- authen form -->
-                <div class="auth-form"> 
+                <!-- Register form -->
+                <div class="auth-form auth-form__register"> 
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng Ký</h3>
                         <span class="auth-form__switch-btn">Đăng nhập</span>
@@ -151,6 +151,45 @@
                             <i class="fa-brands fa-google"></i>
                             <span>
                                 kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Login -->
+                <div class="auth-form auth-form__login"> 
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng Ký</span>
+                    </div>
+                    <form action="" class="form">
+                        <div class="form__group">
+                            <input type="email" class="form__input" name="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form__group">
+                            <input type="password" class="form__input" name="password" placeholder="Enter your password">
+                        </div>
+                    </form>
+                    <div class="auth-form__help">
+                        <a href="" class="auth-form__help-item auth-form__help-item--primary td-none  " >Quên mật khẩu</a>
+                        <span class="auth-form__seperated"></span>
+                        <a href="" class="auth-form__help-item td-none  " >Cần trợ giúp ?</a>
+                    </div>
+                    <div class="auth-form__control">
+                        <div class="btn btn--normal">TRỞ LẠI</div>
+                        <div class="btn btn--primary">ĐĂNG NHẬP</div>
+                    </div>
+
+                    <div class="auth-form__social">
+                        <a href="" class="btn btn--with-icon btn--facebook td-none ">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <span>
+                                Đăng nhập với facebook
+                            </span>
+                        </a>
+                        <a href="" class="btn btn--with-icon btn--google td-none">
+                            <i class="fa-brands fa-google"></i>
+                            <span>
+                                Đăng nhập với Google
                             </span>
                         </a>
                     </div>
