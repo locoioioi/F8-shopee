@@ -4,7 +4,9 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --orange-color: 
+    --header-height: 120px;
+    --navbar-height: 40px;
+    --header-with-search-height: calc(var(var(--header-height) - var(--navbar-height)));
 }
 
 * {
@@ -66,6 +68,7 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
+    animation: fadeIn linear 0.3s;
 }
 .modal__body {
     width: 30%;
@@ -74,6 +77,8 @@ html {
     border-radius: 5px;
     z-index: 999;
     overflow: hidden;
+    transform-origin: center;
+    animation: growth linear 0.3s;
 }
 /* Animation */
 @keyframes fadeIn {
@@ -82,5 +87,21 @@ html {
     }
     100% {
         opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    } 
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes growth {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
     }
 }
