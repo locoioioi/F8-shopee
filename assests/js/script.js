@@ -6,7 +6,6 @@ var registerModal    = document.querySelector('.auth-form__register');
 var loginModal = document.querySelector('.auth-form__login');
 var switchRegister = document.querySelector('.switch-btn__register');
 var switchLogin = document.querySelector('.switch-btn__login');
-
 // open modal
 register.addEventListener('click', function () {
     modal.classList.add('modal-display');
@@ -49,3 +48,23 @@ function loginOpen() {
 function loginRemove() { 
     loginModal.classList.add('auth-form__login');
 }
+
+var selectCategory = document.querySelectorAll('.category-item');
+// toggle selected category
+selectCategory.forEach(category => {
+    category.addEventListener('click', () => {
+        // delete all the categories with category-item--active
+        selectCategory.forEach(otherCategory => { 
+            otherCategory.classList.remove('category-item--active');
+        });
+        // add category-item--active to the selected one.
+        category.classList.add('category-item--active');
+    })
+});
+// like function
+var heartBtn = document.querySelectorAll('.home-product__like');
+heartBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('home-product__like--liked');
+    })
+});
